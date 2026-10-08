@@ -5,6 +5,7 @@ import {
   Text,
   TouchableOpacity,
   View,
+  ImageBackground, //first fix
 } from 'react-native';
 
 type HourlyForecast = {
