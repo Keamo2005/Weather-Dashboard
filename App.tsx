@@ -328,7 +328,7 @@ export default function App() {
       </View>
 
       <ImageBackground
-        source={selectedWeather.backgroundImage}
+        source={{uri:selectedWeather.backgroundImage}} //fix third
         style={styles.weatherHero}
         imageStyle={styles.weatherHeroImage}
       >
@@ -352,7 +352,7 @@ export default function App() {
         />
         <WeatherDetail
           label="Humidity"
-          value={`${selectedWeather.feelsLike}%`}
+          value={`${selectedWeather.humidity}%`} //fix fourth
         />
         <WeatherDetail
           label="Wind"
