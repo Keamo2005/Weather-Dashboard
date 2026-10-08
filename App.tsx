@@ -368,7 +368,7 @@ export default function App() {
         />
         <WeatherDetail
           label="UV Index"
-          value={`${selectedWeather.uvIndex}`}
+          value={`${selectedWeather.uvIndex}`} fjjufhujhid
         />
       </View>
 
