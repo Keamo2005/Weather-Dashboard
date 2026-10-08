@@ -396,7 +396,7 @@ export default function App() {
         <Text style={styles.sectionTitle}>5 Day Forecast</Text>
 
         <View style={styles.dailyContainer}>
-          {selectedWeather.daily.map((day) => {
+          {selectedWeather.daily.map((day) => ( //6
             <View key={day.day} style={styles.dailyCard}>
               <Text style={styles.dayName}>{day.day}</Text>
               <Text style={styles.dailyIcon}>{day.icon}</Text>
@@ -407,8 +407,8 @@ export default function App() {
               </View>
 
               <Text style={styles.conditionText}>{day.condition}</Text>
-            </View>;
-          })}
+            </View> //7
+          ))}
         </View>
       </View>
 
