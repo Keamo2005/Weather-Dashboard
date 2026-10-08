@@ -368,7 +368,7 @@ export default function App() {
         />
         <WeatherDetail
           label="UV Index"
-          value={`${selectedWeather.uvIndex}`} fjjufhujhid
+          value={`${selectedWeather.uvIndex}`}
         />
       </View>
 
@@ -376,7 +376,7 @@ export default function App() {
         <Text style={styles.sectionTitle}>24 Hour Forecast</Text>
 
         <ScrollView
-          horizontal={false}
+          horizontal={true} //fix fivth
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.horizontalContent}
         >
